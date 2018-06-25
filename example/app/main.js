@@ -11,10 +11,10 @@ import { StyleSheet, View } from "react-native";
 const styles = StyleSheet.create( {
     container: {
         flex: 1,
-        marginTop: 20,
+        paddingTop: 20,
         justifyContent: "space-evenly",
         alignItems: "center",
-        backgroundColor: "#F5FCFF",
+        backgroundColor: "#f5fcff",
     },
 } );
 
@@ -30,7 +30,7 @@ export default class App extends Component {
         return (
             <View style={ styles.container }>
                 <Examples label={ "Simple Choices" } sheetFactory={ simpleChoicesSheetFactory }/>
-                <Examples label={ "Date Picker" } sheetFactory={ datePickerSheetFactory }/>
+                <ExampleWithView label={ "Date Picker" } sheetFactory={ datePickerSheetFactory }/>
                 <ExampleWithView label={ "Custom Style" } sheetFactory={ simpleChoicesSheetFactory } styles={ customStyles } buttonUnderlayColor="purple"/>
             </View>
         );
