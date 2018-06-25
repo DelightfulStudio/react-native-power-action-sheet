@@ -32,7 +32,7 @@ class ExampleWithView extends Component {
                 <Text style={ styles.selected }>
                     { selected ? `You selected: ${ selected }` : "Nothing is selected" }
                 </Text>
-                <PowerActionSheet renderContent={ ChoicesRenderer } ref={ ref => this.actionSheetRef = ref }/>
+                <PowerActionSheet { ...this.props } renderContent={ ChoicesRenderer } ref={ ref => this.actionSheetRef = ref }/>
             </View>
         )
     }
