@@ -11,7 +11,7 @@ class DatePicker extends Component {
 
 
     render() {
-        const { close, options: { buttonUnderlayColor } } = this.props;
+        const { close } = this.props;
         const { date } = this.state;
 
         return (
@@ -31,7 +31,6 @@ class DatePicker extends Component {
                     disabled={ !date }
                     onPress={ () => close( date.dateString ) }
                     bottom={ true }
-                    underlayColor={ buttonUnderlayColor }
                 >
                     Select
                 </Button>
