@@ -1,7 +1,8 @@
+import DatePickerComponent from "../components/date-picker";
+
 import { Button, Message, Separator, Title } from "react-native-power-action-sheet";
 
 import React, { Component, Fragment } from "react";
-import { Calendar } from "react-native-calendars";
 
 class DatePicker extends Component {
 
@@ -11,7 +12,7 @@ class DatePicker extends Component {
 
 
     render() {
-        const { close } = this.props;
+        const { styles, close } = this.props;
         const { date } = this.state;
 
         return (
@@ -20,16 +21,18 @@ class DatePicker extends Component {
                 <Message { ...this.props }
                     message="This is an example that shows how to implement a date picker inside action sheet"
                 />
-                <Separator {...this.props}/>
-                <Calendar
-                    onDayPress={ date => this.setState( { date } ) }
-                    markedDates={ date ? { [ date.dateString ]: { selected: true, selectedColor: "blue" } } : null }
+                <Separator { ...this.props }/>
+                <DatePickerComponent
+                    style={ styles.control }
+                    date={ this.state.date || new Date() }
+                    mode="datetime"
+                    onDateChange={ date => this.setState( { date } ) }
                 />
-                <Separator {...this.props}/>
+                <Separator { ...this.props }/>
                 <Button
                     { ...this.props }
                     disabled={ !date }
-                    onPress={ () => close( date.dateString ) }
+                    onPress={ () => close( `${ date.toDateString()} ${date.toLocaleTimeString()}` ) }
                     bottom={ true }
                 >
                     Select
@@ -42,7 +45,7 @@ class DatePicker extends Component {
 
 export default () => (
     {
-        maxHeightRatio: 1,
+        maxHeightRatio: 0.9,
         renderContent: ( props ) => ( <DatePicker { ...props }/> )
     }
 );

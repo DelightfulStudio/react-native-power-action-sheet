@@ -2,6 +2,12 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create( {
 
+    container: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+    },
+
     button: {
         width: 250,
         backgroundColor: "#38f",

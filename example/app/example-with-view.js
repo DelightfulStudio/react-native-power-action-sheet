@@ -23,7 +23,7 @@ class ExampleWithView extends Component {
     render() {
         const { selected } = this.state;
         return (
-            <View>
+            <View style={ styles.container }>
                 <Button
                     label={ `${this.props.label} With View` }
                     onPress={ this.showActionSheet }
