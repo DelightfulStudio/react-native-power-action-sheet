@@ -1,22 +1,12 @@
 import Button from "./components/button";
-import simpleChoicesSheetFactory from "./sheets/simple-choices";
+import styles from "./example-styles";
 
 import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
 
 import { PowerActionSheet, ChoicesRenderer } from "react-native-power-action-sheet";
 
-const localStyle = StyleSheet.create( {
-
-    selected: {
-        paddingVertical: 15,
-        textAlign: "center",
-        color: "grey"
-    }
-} );
-
-
-class SimpleChoices extends Component {
+class ExampleWithView extends Component {
 
     actionSheetRef = React.createRef();
     state = {
@@ -25,7 +15,7 @@ class SimpleChoices extends Component {
 
     showActionSheet = () => {
         this.actionSheetRef.open( {
-            ...simpleChoicesSheetFactory(),
+            ...this.props.sheetFactory(),
             onClose: selected => { this.setState( { selected } ) }
         } );
     };
@@ -34,13 +24,18 @@ class SimpleChoices extends Component {
         const { selected } = this.state;
         return (
             <View>
-                <Button label="Standard Choices" onPress={ this.showActionSheet } style={ { button: { width: 250 } } }/>
-                <Text style={ localStyle.selected }>{ selected ? `You selected: ${ selected }` : "Nothing is selected" }</Text>
+                <Button
+                    label={ `${this.props.label} With View` }
+                    onPress={ this.showActionSheet }
+                    styles={ styles }
+                />
+                <Text style={ styles.selected }>
+                    { selected ? `You selected: ${ selected }` : "Nothing is selected" }
+                </Text>
                 <PowerActionSheet renderContent={ ChoicesRenderer } ref={ ref => this.actionSheetRef = ref }/>
             </View>
         )
     }
-
 }
 
-export default SimpleChoices;
+export default ExampleWithView;
