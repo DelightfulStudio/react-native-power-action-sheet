@@ -1,10 +1,10 @@
 import React from "react";
 import { Text, TouchableHighlight } from "react-native";
 
-export default ( { label, onPress, buttonUnderlayColor, styles = {} } ) => (
+export default ( { label, onPress, styles = {} } ) => (
     <TouchableHighlight
         onPress={ onPress }
-        buttonUnderlayColor={ buttonUnderlayColor }
+        underlayColor="#77ACFF"
         style={ [ styles.button ] }
     >
         <Text style={ [ styles.buttonLabel ] }>{label}</Text>

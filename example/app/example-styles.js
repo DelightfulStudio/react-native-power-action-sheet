@@ -15,9 +15,9 @@ export default StyleSheet.create( {
     },
 
     selected: {
-        paddingVertical: 15,
+        paddingVertical: 5,
         textAlign: "center",
         color: "grey"
-    }
-} );
+    },
 
+} );
