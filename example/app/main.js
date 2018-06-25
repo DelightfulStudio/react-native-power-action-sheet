@@ -1,7 +1,9 @@
-import SimpleChoices from "./simple-choices";
-import SimpleChoicesWithProvider from "./simple-choices-with-provider";
+import ExampleWithView from "./example-with-view";
+import ExampleWithProvider from "./example-with-provider";
+import datePickerSheetFactory from "./sheets/date-picker";
+import simpleChoicesSheetFactory from "./sheets/simple-choices";
 
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { StyleSheet, View } from "react-native";
 
 const styles = StyleSheet.create( {
@@ -23,12 +25,19 @@ const styles = StyleSheet.create( {
     },
 } );
 
+const Examples = ( props ) => (
+    <Fragment>
+        <ExampleWithView {...props}/>
+        <ExampleWithProvider {...props}/>
+    </Fragment>
+);
+
 export default class App extends Component {
     render() {
         return (
             <View style={ styles.container }>
-                <SimpleChoices/>
-                <SimpleChoicesWithProvider/>
+                <Examples label={ "Simple Choices" } sheetFactory={ simpleChoicesSheetFactory }/>
+                <Examples label={ "Date Picker" } sheetFactory={ datePickerSheetFactory }/>
             </View>
         );
     }
