@@ -25,8 +25,8 @@ class DatePickerRenderer extends Component {
         return (
             <Fragment>
                 <Title { ...this.props } top={ true } title={ title || "Pick a date" }/>
-                { message ? <Message { ...this.props } message={ message } /> : null }
-                < Separator { ...this.props }/>
+                { message ? <Message { ...this.props } message={ message }/> : null }
+                <Separator { ...this.props }/>
                 <DatePicker
                     style={ styles.control }
                     date={ date }
@@ -47,4 +47,4 @@ class DatePickerRenderer extends Component {
     }
 }
 
-export default ( props ) => <DatePickerRenderer {...props}/>
+export default ( props ) => <DatePickerRenderer { ...props }/>

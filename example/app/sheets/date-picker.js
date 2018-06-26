@@ -1,5 +1,4 @@
 import DatePickerRenderer from "../components/date-picker-renderer";
-import React from "react";
 
 export default () => {
     const defaultDate = new Date();
