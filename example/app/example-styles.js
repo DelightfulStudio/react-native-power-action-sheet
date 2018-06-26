@@ -10,14 +10,14 @@ export default StyleSheet.create( {
 
     button: {
         width: 250,
-        backgroundColor: "#38f",
+        backgroundColor: "#38F",
     },
 
     buttonLabel: {
         marginVertical: 15,
         marginHorizontal: 15,
         textAlign: "center",
-        color: "#fff",
+        color: "#FFF",
     },
 
     selected: {

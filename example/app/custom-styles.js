@@ -5,31 +5,31 @@ export default {
     },
 
     button: {
-        backgroundColor: "#332a00"
+        backgroundColor: "#332A00"
     },
 
     buttonLabel: {
-        color: "#fbd89b"
+        color: "#FBD89B"
     },
 
     disabledButtonLabel: {
-        color: "#4f493d",
+        color: "#4F493D",
         fontSize: 20
     },
 
     cancelButton: {
-        backgroundColor: "#5b0000",
+        backgroundColor: "#5B0000",
     },
 
     cancelButtonLabel: {
-        color: "#a49a8c"
+        color: "#A49A8C"
     },
 
     title: {
-        color: "#bdc5ce"
+        color: "#BDC5CE"
     },
 
     message: {
-        color: "#7f7f7f"
+        color: "#7F7F7F"
     }
 };
