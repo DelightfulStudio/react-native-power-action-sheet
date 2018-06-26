@@ -1,4 +1,5 @@
-import { Button, Message, Separator, Title, DatePicker } from "../components";
+import DatePicker from "./date-picker"
+import { Button, Message, Separator, Title } from "react-native-power-action-sheet";
 
 import React, { Component, Fragment } from "react";
 
@@ -46,5 +47,4 @@ class DatePickerRenderer extends Component {
     }
 }
 
-
-export default ( props ) => ( <DatePickerRenderer {...props}/> );
+export default ( props ) => <DatePickerRenderer {...props}/>

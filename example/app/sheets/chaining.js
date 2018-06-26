@@ -1,6 +1,5 @@
-import { Button, DatePickerRenderer, Message, Separator, Title } from "react-native-power-action-sheet";
+import DatePickerRenderer from "../components/date-picker-renderer";
 
-import React, { Component, Fragment } from "react";
 import casual from "casual-browserify";
 
 const message = "This is an example how to implement chaining action sheets";
