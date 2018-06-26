@@ -19,7 +19,7 @@ class DatePicker extends Component {
             <Fragment>
                 <Title { ...this.props } top={ true } title="Pick your date"/>
                 <Message { ...this.props }
-                    message="This is an example that shows how to implement a date picker inside action sheet"
+                    message="This is an example how to implement a date picker inside action sheet"
                 />
                 <Separator { ...this.props }/>
                 <DatePickerComponent
@@ -35,7 +35,7 @@ class DatePicker extends Component {
                     onPress={ () => close( `${ date.toDateString()} ${date.toLocaleTimeString()}` ) }
                     bottom={ true }
                 >
-                    Select
+                    Accept
                 </Button>
             </Fragment>
         );

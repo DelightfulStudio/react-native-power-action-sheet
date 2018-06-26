@@ -1,5 +1,7 @@
 import ExampleWithView from "./example-with-view";
 import ExampleWithProvider from "./example-with-provider";
+
+import chainingSheetFactory from "./sheets/chaining";
 import datePickerSheetFactory from "./sheets/date-picker";
 import simpleChoicesSheetFactory from "./sheets/simple-choices";
 
@@ -31,6 +33,7 @@ export default class App extends Component {
             <View style={ styles.container }>
                 <Examples label={ "Simple Choices" } sheetFactory={ simpleChoicesSheetFactory }/>
                 <ExampleWithView label={ "Date Picker" } sheetFactory={ datePickerSheetFactory }/>
+                <ExampleWithView label={ "Chaining" } sheetFactory={ chainingSheetFactory }/>
                 <ExampleWithView label={ "Custom Style" } sheetFactory={ simpleChoicesSheetFactory } styles={ customStyles } buttonUnderlayColor="purple"/>
             </View>
         );
