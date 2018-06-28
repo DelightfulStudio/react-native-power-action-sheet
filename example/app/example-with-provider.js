@@ -4,7 +4,7 @@ import styles from "./example-styles";
 import React, { Component } from "react";
 import { Text, View } from "react-native";
 
-import { ChoicesRenderer, PowerActionSheetConsumer, PowerActionSheetProvider } from "react-native-power-action-sheet";
+import { ChoicesSheetView, PowerActionSheetConsumer, PowerActionSheetProvider } from "react-native-power-action-sheet";
 
 
 class ExampleWithProvider extends Component {
@@ -39,7 +39,7 @@ class ExampleWithProvider extends Component {
 }
 
 export default ( props ) => (
-    <PowerActionSheetProvider renderContent={ ChoicesRenderer }>
+    <PowerActionSheetProvider sheetView={ ChoicesSheetView }>
         <PowerActionSheetConsumer>
             { actionSheet => <ExampleWithProvider actionSheet={ actionSheet } { ...props }/> }
         </PowerActionSheetConsumer>

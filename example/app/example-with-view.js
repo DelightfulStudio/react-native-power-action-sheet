@@ -4,7 +4,7 @@ import styles from "./example-styles";
 import React, { Component } from "react";
 import { Text, View } from "react-native";
 
-import { ChoicesRenderer, PowerActionSheet } from "react-native-power-action-sheet";
+import { ChoicesSheetView, PowerActionSheet } from "react-native-power-action-sheet";
 
 class ExampleWithView extends Component {
 
@@ -32,7 +32,7 @@ class ExampleWithView extends Component {
                 <Text style={ styles.selected }>
                     { selected ? `You selected: ${ selected }` : "Nothing is selected" }
                 </Text>
-                <PowerActionSheet { ...this.props } renderContent={ ChoicesRenderer } ref={ ref => this.actionSheetRef = ref }/>
+                <PowerActionSheet { ...this.props } sheetView={ ChoicesSheetView } ref={ ref => this.actionSheetRef = ref }/>
             </View>
         )
     }

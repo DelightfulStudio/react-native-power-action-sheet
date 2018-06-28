@@ -1,4 +1,4 @@
-import DatePickerRenderer from "../components/date-picker-renderer";
+import DatePickerSheet from "../components/date-picker-sheet";
 
 import casual from "casual-browserify";
 
@@ -21,7 +21,7 @@ const thirdSheet = ( result ) => (
 
 const secondSheet = ( result ) => (
     {
-        renderContent: DatePickerRenderer,
+        sheetView: DatePickerSheet,
         title: "Make your second choice",
         message,
         pickerOptions: {

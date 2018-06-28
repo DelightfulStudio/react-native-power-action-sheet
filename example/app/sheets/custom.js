@@ -47,7 +47,6 @@ class CustomActionSheet extends Component {
 export default () => (
     {
         maxHeightRatio: 0.9,
-        renderContent: ( props ) => ( <CustomActionSheet { ...props }/> )
-
+        sheetView: CustomActionSheet
     }
 );

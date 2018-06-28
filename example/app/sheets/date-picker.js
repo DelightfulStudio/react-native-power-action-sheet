@@ -1,9 +1,9 @@
-import DatePickerRenderer from "../components/date-picker-renderer";
+import DatePickerSheet from "../components/date-picker-sheet";
 
 export default () => {
     const defaultDate = new Date();
     return {
-        renderContent: DatePickerRenderer,
+        sheetView: DatePickerSheet,
         title: "Pick a different date",
         message: "This is an example how to implement a date picker inside action sheet",
         selectTitle: "Accept",

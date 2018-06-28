@@ -3,7 +3,7 @@ import { Button, Message, Separator, Title } from "react-native-power-action-she
 
 import React, { Component, Fragment } from "react";
 
-class DatePickerRenderer extends Component {
+export default class DatePickerSheet extends Component {
 
     state = {
         date: null
@@ -46,5 +46,3 @@ class DatePickerRenderer extends Component {
         );
     }
 }
-
-export default ( props ) => <DatePickerRenderer { ...props }/>
