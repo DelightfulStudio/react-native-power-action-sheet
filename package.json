@@ -1,22 +1,19 @@
 {
     "name": "react-native-power-action-sheet",
     "version": "0.0.1",
-    "main": "lib/index.js",
+    "author": "Delightful Studio",
     "license": "MIT",
+    "main": "lib/index.js",
     "scripts": {
-        "start": "node node_modules/react-native/local-cli/cli.js start",
-        "run-ios": "react-native run-ios --project-path ./example/ios"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/DelightfulStudio/react-native-power-action-sheet.git"
     },
-    "author": "Delightful Studio",
     "dependencies": {},
     "peerDependencies": {
         "prop-types": ">=15.6.0",
-        "react": ">=16.4.0",
-        "react-native": ">=0.55.00"
+        "react": ">=16.4.0"
     },
     "devDependencies": {
         "@textpress/eslint-config-textpress": "^0.4.0",
@@ -29,7 +26,6 @@
         "prop-types": "^15.6.2",
         "react": "^16.4.1",
         "react-native": "^0.55.4",
-        "react-native-cli": "^2.0.1",
         "react-test-renderer": "^16.4.1"
     },
     "jest": {

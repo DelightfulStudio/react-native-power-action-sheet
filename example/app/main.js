@@ -9,7 +9,10 @@ import simpleChoicesSheetFactory from "./sheets/simple-choices";
 import customStyles from "./custom-styles";
 
 import React, { Component, Fragment } from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, UIManager } from "react-native";
+
+// enable layout animation on android
+UIManager.setLayoutAnimationEnabledExperimental && UIManager.setLayoutAnimationEnabledExperimental( true );
 
 const styles = StyleSheet.create( {
     container: {
@@ -17,14 +20,14 @@ const styles = StyleSheet.create( {
         paddingTop: 20,
         justifyContent: "space-evenly",
         alignItems: "center",
-        backgroundColor: "#F5FCFF",
-    },
+        backgroundColor: "#F5FCFF"
+    }
 } );
 
 const Examples = ( props ) => (
     <Fragment>
-        <ExampleWithView {...props}/>
-        <ExampleWithProvider {...props}/>
+        <ExampleWithView { ...props }/>
+        <ExampleWithProvider { ...props }/>
     </Fragment>
 );
 
@@ -36,7 +39,8 @@ export default class App extends Component {
                 <ExampleWithView label={ "Date Picker" } sheetFactory={ datePickerSheetFactory }/>
                 <ExampleWithView label={ "Chaining" } sheetFactory={ chainingSheetFactory }/>
                 <ExampleWithView label={ "Custom Content" } sheetFactory={ customSheetFactory }/>
-                <ExampleWithView label={ "Custom Style" } sheetFactory={ simpleChoicesSheetFactory } styles={ customStyles } buttonUnderlayColor="purple"/>
+                <ExampleWithView label={ "Custom Style" } sheetFactory={ simpleChoicesSheetFactory }
+                    styles={ customStyles } buttonUnderlayColor="purple"/>
             </View>
         );
     }

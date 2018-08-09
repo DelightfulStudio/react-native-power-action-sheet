@@ -1,5 +1,5 @@
-import DatePicker from "./date-picker"
 import { Button, Message, Separator, Title } from "react-native-power-action-sheet";
+import { DatePicker } from "react-native-wheel-datepicker";
 
 import React, { Component, Fragment } from "react";
 
@@ -29,6 +29,7 @@ export default class DatePickerSheet extends Component {
                 <Separator { ...this.props }/>
                 <DatePicker
                     style={ styles.control }
+                    order={ "M-D-Y" }
                     date={ date }
                     { ...pickerOptions }
                     onDateChange={ date => this.setState( { date } ) }
