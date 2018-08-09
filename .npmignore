@@ -1,0 +1,8 @@
+.*
+flow-typed/
+example/
+configure-publishing-npm.sh
+gulpfile.js
+yalc.lock
+yarn.lock
+*.log
