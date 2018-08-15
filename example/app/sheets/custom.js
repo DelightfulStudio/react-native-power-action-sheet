@@ -1,4 +1,4 @@
-import { Button, Message, Separator, Title } from "react-native-power-action-sheet";
+import { Button, Message, Separator, Title } from "@delightfulstudio/react-native-power-action-sheet";
 
 import React, { Component, Fragment } from "react";
 import { TextInput, View } from "react-native";

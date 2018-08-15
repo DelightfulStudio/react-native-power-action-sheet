@@ -4,7 +4,7 @@ import styles from "./example-styles";
 import React, { Component } from "react";
 import { Text, View } from "react-native";
 
-import { ChoicesSheetView, PowerActionSheetConsumer, PowerActionSheetProvider } from "react-native-power-action-sheet";
+import { ChoicesSheetView, PowerActionSheetConsumer, PowerActionSheetProvider } from "@delightfulstudio/react-native-power-action-sheet";
 
 
 class ExampleWithProvider extends Component {
