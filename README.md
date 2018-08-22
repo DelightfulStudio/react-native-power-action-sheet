@@ -1,10 +1,17 @@
 # react-native-power-action-sheet
 
-Inspired by https://github.com/valerybugakov/react-native-custom-actionsheet
+Cross-platform [action sheet](https://developer.apple.com/design/human-interface-guidelines/ios/views/action-sheets/) component with powerful customization options (including custom views) and built-in support for sheet chaining.
 
-To run example apps:
-1. install root packages: `yarn` or `npm install`
-2. install example packages: in example folder `yarn` or `npm install`
-3. start metro server: in example folder `yarn start` or `npm start`
-4. compile/start ios app: in example folder `yarn run-ios` or `npm run-ios`
-5. compile/start android app: in example folder `yarn run-android` or `npm run-android`
+## Examples
+
+To check out examples:
+ 1. Install root packages: `yarn` or `npm install`
+ 2. Install example packages: in the `example` folder, do `yarn` or `npm install`
+ 3. Start metro server: in the `example` folder, do `yarn start` or `npm start`
+ 4. Compile/start iOS app: in the `example` folder, do `yarn run-ios` or `npm run-ios`
+ 5. Compile/start Android app: in the `example` folder, do `yarn run-android` or `npm run-android`
+
+## Credits
+
+Loosely based on https://github.com/valerybugakov/react-native-custom-actionsheet
+
