@@ -1,6 +1,6 @@
 # react-native-power-action-sheet
-[![npm version](http://img.shields.io/npm/v/@delightfulstudio/react-native-power-action-sheet.svg?style=flat-square)](https://npmjs.org/package/react-native-power-action-sheet "View this project on npm")
-[![npm version](http://img.shields.io/npm/dw/@delightfulstudio/react-native-power-action-sheet.svg?style=flat-square)](https://npmjs.org/package/react-native-power-action-sheet "View this project on npm")
+[![npm version](http://img.shields.io/npm/v/@delightfulstudio/react-native-power-action-sheet.svg?style=flat-square)](https://npmjs.org/package/@delightfulstudio/react-native-power-action-sheet "View this project on npm")
+[![npm version](http://img.shields.io/npm/dw/@delightfulstudio/react-native-power-action-sheet.svg?style=flat-square)](https://npmjs.org/package/@delightfulstudio/react-native-power-action-sheet "View this project on npm")
 
 Cross-platform [action sheet](https://developer.apple.com/design/human-interface-guidelines/ios/views/action-sheets/) component with powerful customization options (including custom views) and built-in support for sheet chaining.
 
