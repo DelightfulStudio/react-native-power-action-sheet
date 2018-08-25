@@ -9,6 +9,7 @@
         "run-android": "react-native run-android"
     },
     "devDependencies": {
+        "casual-browserify": "^1.5.19-2",
         "react-native": "link:../node_modules/react-native",
         "react-native-wheel-datepicker": "^2.2.3"
     }
