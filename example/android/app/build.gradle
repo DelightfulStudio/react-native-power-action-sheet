@@ -99,7 +99,7 @@ android {
     buildToolsVersion "27.0.3"
 
     defaultConfig {
-        applicationId "com.example"
+        applicationId "com.power_action_sheet_example"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1

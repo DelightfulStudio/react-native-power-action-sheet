@@ -1,6 +1,6 @@
 {
-    "name": "example",
-    "description": "example",
+    "name": "power_action_sheet_example",
+    "description": "Power Action Sheet Example",
     "author": "Delightful Studio",
     "license": "MIT",
     "scripts": {
