@@ -1,6 +1,7 @@
 {
     "name": "@delightfulstudio/react-native-power-action-sheet",
     "version": "0.0.6",
+    "description": "Cross-platform action sheet component with powerful customization options",
     "author": "Delightful Studio",
     "license": "MIT",
     "main": "lib/index.js",
