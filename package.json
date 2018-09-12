@@ -1,6 +1,6 @@
 {
     "name": "@delightfulstudio/react-native-power-action-sheet",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "author": "Delightful Studio",
     "license": "MIT",
     "main": "lib/index.js",
