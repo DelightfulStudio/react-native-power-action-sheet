@@ -4,6 +4,13 @@
 
 Cross-platform [action sheet](https://developer.apple.com/design/human-interface-guidelines/ios/views/action-sheets/) component with powerful customization options (including custom views) and built-in support for sheet chaining.
 
+## Installation
+
+```
+`yarn add @delightfulstudio/react-native-power-action-sheet @delightfulstudio/react-native-safe-area-insets
+```
+[Manually link](https://github.com/DelightfulStudio/react-native-safe-area-insets#manual-linking) `@delightfulstudio/react-native-safe-area-insets`
+
 ## Examples
 
 To check out examples:

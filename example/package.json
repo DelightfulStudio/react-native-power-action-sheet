@@ -9,6 +9,7 @@
         "run-android": "react-native run-android"
     },
     "devDependencies": {
+        "@delightfulstudio/react-native-safe-area-insets": "link:../node_modules/@delightfulstudio/react-native-safe-area-insets",
         "casual-browserify": "^1.5.19-2",
         "react-native": "link:../node_modules/react-native",
         "react-native-wheel-datepicker": "^2.2.3"
