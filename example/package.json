@@ -10,8 +10,8 @@
     },
     "devDependencies": {
         "@delightfulstudio/react-native-safe-area-insets": "link:../node_modules/@delightfulstudio/react-native-safe-area-insets",
+        "@delightfulstudio/react-native-wheel-picker-android": "^2.1.2",
         "casual-browserify": "^1.5.19-2",
-        "react-native": "link:../node_modules/react-native",
-        "react-native-wheel-datepicker": "^2.2.3"
+        "react-native": "link:../node_modules/react-native"
     }
 }

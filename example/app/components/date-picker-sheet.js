@@ -1,5 +1,5 @@
 import { Button, Message, Separator, Title } from "@delightfulstudio/react-native-power-action-sheet";
-import { DatePicker } from "react-native-wheel-datepicker";
+import DatePicker from "./date-picker";
 
 import React, { Component, Fragment } from "react";
 

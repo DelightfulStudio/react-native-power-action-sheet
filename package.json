@@ -21,23 +21,26 @@
         "action-sheet"
     ],
     "peerDependencies": {
-        "@delightfulstudio/react-native-safe-area-insets": "*",
+        "@delightfulstudio/react-native-safe-area-insets": ">=0.1.0",
         "prop-types": ">=15.6.0",
-        "react": ">=16.4.0"
+        "react": ">=16.4.2",
+        "react-native": ">=0.55.4"
     },
     "devDependencies": {
-        "@delightfulstudio/react-native-safe-area-insets": "*",
+        "@delightfulstudio/react-native-safe-area-insets": ">=0.1.0",
         "@textpress/eslint-config-textpress": "^0.4.0",
-        "babel-core": "^6.26.3",
+        "babel-core": "^7.0.0-bridge.0",
         "babel-jest": "^23.0.1",
         "babel-preset-react-native": "^4.0.0",
         "conventional-github-releaser": "^3.1.2",
-        "eslint": "^5.5.0",
+        "eslint": "^5.6.0",
         "jest": "^23.1.0",
+        "metro-react-native-babel-preset": "0.45.5",
+        "moment": "^2.22.2",
         "prop-types": "^15.6.2",
-        "react": "^16.5.1",
-        "react-native": "^0.55.4",
-        "react-test-renderer": "^16.5.1"
+        "react": "16.5.0",
+        "react-native": "0.57.0",
+        "react-test-renderer": "16.5.0"
     },
     "jest": {
         "preset": "react-native"
