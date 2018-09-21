@@ -1,4 +1,4 @@
-package com.power_action_sheet_example;
+package com.delightfulstudio.example;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "power_action_sheet_example";
+        return "example";
     }
 }

@@ -1,4 +1,4 @@
-package com.power_action_sheet_example;
+package com.delightfulstudio.example;
 
 import android.app.Application;
 
